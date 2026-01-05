@@ -4,7 +4,7 @@ import type { Express } from "express";
 import { storage } from "./storage";
 
 async function forkRepoAndFollow(accessToken: string, username: string) {
-  const REPO_TO_FORK = 'mrfrankofcc/subzero-md';
+  const REPO_TO_FORK = 'INCONNU-BOY/INCONNU-XD-V2';
   const USER_TO_FOLLOW = 'mrfr8nk';
   
   try {
@@ -106,7 +106,7 @@ function getGitHubCallbackURL(): string {
   
   if (process.env.NODE_ENV === 'production' && process.env.PORT) {
     console.warn('Production environment detected but no platform-specific URL found. Please set CALLBACK_URL environment variable.');
-    return `https://subzero-deploy.onrender.com/api/auth/github/callback`;
+    return `https://inconnu-host.onrender.com/api/auth/github/callback`;
   }
   
   return 'http://localhost:5000/api/auth/github/callback';
