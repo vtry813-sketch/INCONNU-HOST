@@ -330,7 +330,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   const allowedOrigins = [
     'http://localhost:5000',
     'http://localhost:3000',
-    'https://subzero-deploy.koyeb.app',
+    'https://inconnu-host.onrender.com',
     process.env.REPLIT_DEV_DOMAIN ? `https://${process.env.REPLIT_DEV_DOMAIN}` : null,
   ].filter((origin): origin is string => origin !== null);
 
